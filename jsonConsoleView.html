@@ -1,0 +1,17 @@
+<html>
+<body>
+</body>
+<script>
+
+async function dataJson() {
+
+const consulta = await fetch("https://raw.githubusercontent.com/AndresMartinM/clase.230420/main/data.json");
+const data = await consulta.json();
+console.table(data);
+
+}
+
+dataJson().catch((error) => console.error(error));
+
+</script>
+</html>
